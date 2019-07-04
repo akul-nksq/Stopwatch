@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textSize="56sp"
+        android:paddingBottom="42dp"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/start"
+        android:paddingBottom="42dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="153dp"
+        android:onClick="btnClickStart"/>
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:paddingBottom="42dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="242dp"
+        android:onClick="btnClickStop"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:paddingBottom="42dp"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="385dp"
+        android:onClick="btnClickReset"/>
+
+</LinearLayout>
